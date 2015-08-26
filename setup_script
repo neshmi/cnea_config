@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+echo "Setting up hosts"
+chmod +x setup_hosts.sh
+sudo su -c "./setup_hosts.sh"
+
+# Setup Directories
+echo "Setting up Directories"
+mkdir /home/calvr/CalVR
+mkdir /home/calvr/CalVR/config
+mkdir /home/calvr/calvr_data
+mkdir /home/calvr/bin
+
+# Copy files into place
+echo "Copying files into place"
+cp /home/calvr/setup/*.xml /home/calvr/CalVR/config
+cp /home/calvr/setup/sync_nodes /home/calvr/bin
+chmod +x /home/calvr/bin/sync_nodes
+
+# Setup .bashrc
+echo "Setting up .bashrc"
+echo "# CalVR Configuration"
+echo "export CALVR_HOME=/home/calvr/CalVR" >> /home/calvr/.bashrc
+echo "export CALVR_CONFIG_DIR=$CALVR_HOME/config" >> /home/calvr/.bashrc
+echo "export CALVR_CONFIG_FILE=cnea.xml" >> /home/calvr/.bashrc
+echo "export PATH=$PATH:/home/calvr/bin:$CALVR_HOME/bin"
+echo "alias calvr=CalVR" >> /home/calvr/.bashrc
+
+# Download calvr & build
+/home/calvr/setup/calvr_setup
+
+cd
+echo "all done!"

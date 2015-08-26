@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Copy files into place
+echo "Updating config files and scripts"
+cp /home/calvr/setup/*.xml /home/calvr/CalVR/config
+cp /home/calvr/setup/sync_nodes /home/calvr/bin
+chmod +x /home/calvr/bin/sync_nodes
+
+cd
+echo "all done!"

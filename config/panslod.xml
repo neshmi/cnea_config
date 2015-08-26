@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Plugin>
+	<PanoViewLOD value="on"/>
+	<PanoViewLOD>
+		<ShaderDir value="/Users/neshmi/calvr_data/PansLOD/glsl/"/>
+		<FloorOffset value="1759.425"/>
+		<ImageSearchPath value="/Users/neshmi/calvr_data/PansLOD:/Volumes/MPPTransfer/calvr_data/PansLOD"/>
+		<DefaultConfigDir value="/Users/neshmi/calvr_data/PansLOD/config:/Volumes/MPPTransfer/calvr_data/PansLOD/config"/>
+		<Pans>
+			<Jordan>
+				<Umayri_Best_Set/>
+				<Umayri_Set/>
+				<Umayri_Demo/>
+				<Umayri>
+					<Temple_Entry_1/>
+					<Temple_Shrine_Light/>
+					<Random_Field_H/>
+					<Temple_Shrine_Evening_1/>
+					<Temple_Shrine_Evening_2/>
+					<Temple_Entry_Morning_1/>
+					<Temple_Side_Room_1/>
+					<Temple_Side_Room_2/>
+					<Temple_Entry/>
+					<Temple_Entry/>
+					<Side_Room/>
+					<Temple_Side_Room/>
+					<Field_B_Exterior/>
+					<Tent/>
+					<Entry_Stairs_1/>
+					<Entry_Stairs_2/>
+					<View_from_the_West/>
+					<Back_of_Four_Room_House/>
+					<Courtyard_of_Four_Room_House/>
+					<Courtyard_II/>
+					<Roof_I/>
+					<Roof_II/>
+					<Outside_Dolmen/>
+					<Inside_Dolmen/>
+					<Overlooking_K/>
+					<Building_M_Center/>
+					<Building_M_South/>
+					<Building_M_North/>
+					<Building_B_Broadroom/>
+					<Building_B_Standing_Stone/>
+					<Building_C/>
+					<Build_D/>
+				</Umayri>
+			</Jordan>
+		</Pans>
+	</PanoViewLOD>
+</Plugin>
