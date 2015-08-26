@@ -2,8 +2,7 @@
 # Copy files into place
 echo "Updating config files and scripts"
 cp /home/calvr/setup/config/* /home/calvr/CalVR/config
-cp /home/calvr/setup/sync_nodes /home/calvr/bin
-chmod +x /home/calvr/bin/sync_nodes
+cp /home/calvr/setup/bin/sync_nodes /home/calvr/bin
 
 cd
 echo "all done!"
