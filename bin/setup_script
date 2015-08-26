@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 echo "Setting up hosts"
-sudo su -c "bin/setup_hosts"
+sudo su -c "/home/calvr/setup/bin/setup_hosts"
+
+# Setup .bashrc
+echo "Setting up .bashrc"
+echo "" >> /home/calvr/.bashrc
+echo "# CalVR Configuration" >> /home/calvr/.bashrc
+echo "export CALVR_HOME=/home/calvr/CalVR" >> /home/calvr/.bashrc
+echo "export CALVR_CONFIG_DIR=$CALVR_HOME/config" >> /home/calvr/.bashrc
+echo "export CALVR_CONFIG_FILE=cnea.xml" >> /home/calvr/.bashrc
+echo "export PATH=$PATH:/home/calvr/bin:$CALVR_HOME/bin:/home/calvr/setup/bin" >> /home/calvr/.bashrc
+echo "alias calvr=CalVR" >> /home/calvr/.bashrc
+source /home/calvr/.bashrc
 
 # Setup Directories
 echo "Setting up Directories"
@@ -13,17 +24,6 @@ mkdir -p /home/calvr/bin
 echo "Copying files into place"
 cp /home/calvr/setup/config/* /home/calvr/CalVR/config
 cp /home/calvr/setup/bin/sync_nodes /home/calvr/bin
-
-# Setup .bashrc
-echo "Setting up .bashrc"
-echo "" >> /home/calvr/.bashrc
-echo "# CalVR Configuration" >> /home/calvr/.bashrc
-echo "export CALVR_HOME=/home/calvr/CalVR" >> /home/calvr/.bashrc
-echo "export CALVR_CONFIG_DIR=$CALVR_HOME/config" >> /home/calvr/.bashrc
-echo "export CALVR_CONFIG_FILE=cnea.xml" >> /home/calvr/.bashrc
-echo "export PATH=$PATH:/home/calvr/bin:$CALVR_HOME/bin:/home/calvr/setup/bin" >> /home/calvr/.bashrc
-echo "alias calvr=CalVR" >> /home/calvr/.bashrc
-source /home/calvr/.bashrc
 
 # Download calvr & build
 calvr_setup
