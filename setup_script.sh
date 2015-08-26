@@ -1,26 +1,23 @@
-# Setup the hosts file to include all the nodes
-sudo su #enter SU mode
-echo "#CAVE Nodes" >> /etc/hosts
-echo "192.168.10.1    headnode" >> /etc/hosts
-echo "192.168.10.2    CNEA-0" >> /etc/hosts
-echo "192.168.10.3    CNEA-1" >> /etc/hosts
-echo "192.168.10.4    CNEA-2" >> /etc/hosts
-echo "192.168.10.5    CNEA-3" >> /etc/hosts
-echo "192.168.10.6    CNEA-4" >> /etc/hosts
-exit #exit SU mode
+#!/usr/bin/env bash
+echo "Setting up hosts"
+chmod +x setup_hosts.sh
+sudo su -c "./setup_hosts.sh"
 
 # Setup Directories
+echo "Setting up Directories"
 mkdir /home/calvr/CalVR
 mkdir /home/calvr/CalVR/config
 mkdir /home/calvr/calvr_data
 mkdir /home/calvr/bin
 
 # Copy files into place
+echo "Copying files into place"
 cp /home/calvr/setup/*.xml /home/calvr/CalVR/config
 cp /home/calvr/setup/sync_nodes /home/calvr/bin
 chmod +x /home/calvr/bin/sync_nodes
 
 # Setup .bashrc
+echo "Setting up .bashrc"
 echo "# CalVR Configuration"
 echo "export CALVR_HOME=/home/calvr/CalVR" >> /home/calvr/.bashrc
 echo "export CALVR_CONFIG_DIR=$CALVR_HOME/config" >> /home/calvr/.bashrc
@@ -29,6 +26,7 @@ echo "export PATH=$PATH:/home/calvr/bin:$CALVR_HOME/bin"
 echo "alias calvr=CalVR" >> /home/calvr/.bashrc
 
 # Download calvr & build
+echo "Downloading and setting up CalVR"
 mkdir /home/calvr/src
 cd /home/calvr/src
 git clone git://github.com/calvr/calvr.git
@@ -41,3 +39,5 @@ cd /home/calvr/src/calvr_plugins
 cmake . -DCALVR_DIR="/home/calvr/CalVR" -DCALVR_INCLUDE_DIR="/home/calvr/CalVR/include" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="/home/calvr/CalVR" -DOSG_HOME="/usr" -DOSG_INCLUDE_DIR="/usr/include" -DPLUGINS_GENERAL="ON" -DPLUGIN_ACOUSTIMAZE="OFF" -DPLUGIN_ALGEBRAINMOTION="OFF" -DPLUGIN_ANDROIDNAVIGATOR="OFF" -DPLUGIN_APPSWITCHER="OFF" -DPLUGIN_ARCHFIELD="OFF" -DPLUGIN_ARTIFACTVIS="ON" -DPLUGIN_ARTIFACTVIS2="OF" -DPLUGIN_BINAURALREALITY="OFF" -DPLUGIN_CAMERAFLIGHT="OFF" -DPLUGIN_CAVECADBETA="OFF" -DPLUGIN_CAVESKETCH="OFF" -DPLUGIN_CSELAYERS="OFF" -DPLUGIN_CSEREDESIGN="OFF" -DPLUGIN_CULLINGMGPURENDER="OFF" -DPLUGIN_ELEVATORROOM="OFF" -DPLUGIN_EOGCALIBRATION="OFF" -DPLUGIN_EZVIS="OFF" -DPLUGIN_FUTUREPATIENT="OFF" -DPLUGIN_GML="OFF" -DPLUGIN_GREENLIGHT="OFF" -DPLUGIN_HPWREN="OFF" -DPLUGIN_IMAGESEQUENCE="OFF" -DPLUGIN_IMAGEVIEWER="OFF" -DPLUGIN_INTERACTORS="OFF" -DPLUGIN_KINECTDEMO="OFF" -DPLUGIN_KINECTHELPER="OFF" -DPLUGIN_LAYOUTMANAGER="OFF" -DPLUGIN_LIGHTEDITOR="OFF" -DPLUGIN_LOCATIONTRACKER="OFF" -DPLUGIN_MAZE2="OFF" -DPLUGIN_MENUCLOCK="OFF" -DPLUGIN_MODELLOADER="OFF" -DPLUGIN_MULTIGPURENDER="OFF" -DPLUGIN_MULTIHANDINTERACTION="OFF" -DPLUGIN_MVSIM="OFF" -DPLUGIN_OSGCHROMOSOME="OFF" -DPLUGIN_OSGEARTH="OFF" -DPLUGIN_OSGMOVIE="OFF" -DPLUGIN_OSGPATHRECORDER="OFF" -DPLUGIN_OSGPDF="OFF" -DPLUGIN_OSGVNC="OFF" -DPLUGIN_OSSIMPLANET="OFF" -DPLUGIN_PANOVIEW="OFF" -DPLUGIN_PANOVIEWLOD="ON" -DPLUGIN_PARTICLEDREAMS="OFF" -DPLUGIN_PATHRECORDER="OFF" -DPLUGIN_PLANARLAYOUT="OFF" -DPLUGIN_POINTS="OFF" -DPLUGIN_POINTS2="OFF" -DPLUGIN_POINTSOOC="OFF" -DPLUGIN_POINTSWITHPANS="OFF" -DPLUGIN_SAMPLEEARTH="OFF" -DPLUGIN_SITE="OFF" -DPLUGIN_SKETCH="OFF" -DPLUGIN_SMV2SETTINGS="OFF" -DPLUGIN_SOUNDPLAYER="OFF" -DPLUGIN_SOUNDTEST="OFF" -DPLUGIN_SPACENAVIGATOR="OFF" -DPLUGIN_STRUCTVIEW="OFF" -DPLUGIN_TOUCHDESIGNER="OFF" -DPLUGIN_TOURCAVE="OFF" -DPLUGIN_TRACKSERVER="OFF" -DPLUGIN_TWITTEREARTH="OFF" -DPLUGIN_VIDEO="OFF" -DPLUGIN_VIRVOVOLUME="OFF" -DPLUGIN_VOLUME="OFF" -DPLUGIN_VROOMVIEW="OFF" -DPLUGIN_WATERMAZE="OFF"
 make
 make install
+cd
+echo "all done!"
