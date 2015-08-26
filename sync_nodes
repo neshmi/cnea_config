@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+hostsArray=( "CNEA-0" "CNEA-1" "CNEA-2" "CNEA-3" "CNEA-4" )
+
+for host in "${hostsArray[@]}"
+do
+  rsync -avz -e ssh /home/calvr/CalVR/config calvr@$HOST:/home/calvr/CalVR/config
+  rsync -avz -e ssh /home/calvr/calvr_data calvr@$HOST:/home/calvr/calvr_data
+done

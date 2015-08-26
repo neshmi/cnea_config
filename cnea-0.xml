@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+
+      <RenderOnMaster value="true" />
+      <Stencil value="true" />
+      <ShowAxis value="false" />
+
+      <PreSwapOperation value="FINISH" />
+
+      <Background r="0.0" g="0.0" b="0.0" />
+      <!-- <MultiThreaded value="CullDrawThreadPerContext" /> -->
+      <!-- MultiThreaded value="CullThreadPerCameraDrawThreadPerContext" / -->
+      <!--MultiThreaded value="SingleThreaded" /-->
+      <MultiSample value="4" />
+      <SyncToVBlank value="on" />
+      <FloorHeight value="-1193" />
+      <Near value="100" />
+      <Far value="10000000000" />
+      <UseDepthPartition value="false" />
+      <!--Near value="100" /-->
+      <!--Far value="1000000000" /-->
+
+      <ConfigDebug value="true" />
+
+    <!-- <MultiPC>
+     <NumSlaves value="5" />
+     <!-- <MasterInterface value="192.168.10.1" /> -->
+     <!-- <Startup value="ssh ${USER}@cnea-0 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="0" /> -->
+     <!-- <Startup value="ssh ${USER}@cnea-1 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="1" /> -->
+     <!-- <Startup value="ssh ${USER}@cnea-2 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="2" /> -->
+     <!-- <Startup value="ssh ${USER}@cnea-3 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="3" /> -->
+     <!-- <Startup value="ssh ${USER}@cnea-4 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="4" /> -->
+     <!-- <Startup value="ssh ${USER}@cnea-5 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="5" /> -->
+    <!-- </MultiPC> -->
+
+    <Input>
+     <TrackingDebug value="off" />
+     <Threaded FPS="60.0" />
+     <TrackingSystem1 value="MOUSE">
+       <Offset x="0" y="0" z="0" />
+       <Orientation h="0" p="0" r="0" />
+
+       <NumBodies value="1" />
+       <NumButtons value="3" />
+       <NumValuators value="0" />
+
+       <Body0>
+         <Offset x="0" y="0" z="0" />
+         <Orientation h="0" p="0" r="0" />
+       </Body0>
+     </TrackingSystem1>
+
+     <TrackingSystem0 value="VRPN">
+       <Offset x="0" y="0" z="-1193" />
+       <Orientation h="0" p="0" r="0" />
+
+       <VRPN>
+         <Server value="DTrack@localhost" />
+       </VRPN>
+
+       <NumBodies value="2" />
+       <NumButtons value="0" />
+       <NumValuators value="0" />
+
+       <Body0>
+        <Offset x="0" y="-20" z="-40" />
+        <Orientation h="0" p="0" r="0" />
+       </Body0>
+       <Body1>
+        <Offset x="0" y="0" z="0" />
+        <Orientation h="0" p="0" r="0" />
+       </Body1>
+       <Body2>
+        <Offset x="0" y="0" z="0" />
+        <Orientation h="0" p="0" r="0" />
+       </Body2>
+       <Body3>
+        <Offset x="0" y="0" z="0" />
+        <Orientation h="0" p="0" r="0" />
+       </Body3>
+     </TrackingSystem0>
+
+     <TrackingSystem2 value="VRPN">
+       <NumBodies value="0" />
+       <NumButtons value="3" />
+       <NumValuators value="1" />
+
+       <VRPN>
+         <Server value="Device0@localhost:7701" />
+       </VRPN>
+     </TrackingSystem2>
+
+     <NumHeads value="1" />
+     <Head0Address system="0" body="0" />
+<TrackingDebug value="false" button="true" body="true" station="1" />
+     <NumHands value="2" />
+     <Hand1>
+       <Address system="1" body="0" />
+       <ButtonMask system0="0x00" system1="0xFF" system2="0x00" />
+       <Graphic value="NONE" />
+     </Hand1>
+     <Hand0>
+       <Address system="0" body="1" />
+       <ButtonMask system0="0x00" system1="0x00" system2="0xFF" />
+       <!--Graphic value="NONE" /-->
+       <NumValuators value="1" />
+       <Valuator0 system="2" index="0" />
+     </Hand0>
+
+     <NumValuators value="0" />
+     <Valuator0 station="0" number="0" />
+   </Input>
+
+   <ContextMenus>
+     <Scale value="1.0" />
+     <MinDistance value="750" />
+     <MaxDistance value="1500" />
+     <DefaultOpenButton value="1" />
+   </ContextMenus>
+
+   <MenuSystem type="BOARDMENU" useHints="false">
+    <BoardMenu>
+     <Position distance="1500" />
+     <Scale value="1.3" />
+     <Buttons select="0" open="1" />
+     <Trigger value="DOUBLECLICK" />
+    </BoardMenu>
+   </MenuSystem>
+
+    <SceneSize value="2000" />
+    <ViewerPosition x="0" y="0" z="0" />
+    <Freeze value="off" />
+    <EyeSeparation value="on" />
+
+<LOCAL host="cnea-0">
+  <NumPipes value="1" />
+  <NumScreens value="1" />
+  <NumWindows value="1" />
+
+  <PipeConfig>
+    <Pipe server="0" screen="0" name="0" />
+    <Pipe server="0" screen="1" name="1" />
+  </PipeConfig>
+
+  <WindowConfig>
+    <Window width="1680" comment="MAIN" pipeIndex="0" height="1050" left="0" bottom="0" name="0" decoration="false" />
+    <Window width="1920" comment="MAIN" pipeIndex="1" height="1080" left="0" bottom="0" name="1" decoration="false" />
+  </WindowConfig>
+
+  <ChannelConfig>
+    <Channel left="0" width="1680" bottom="0" height="1050" stereoMode="LEFT" windowIndex="0" name="0" comment="LEFT" />
+    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="LEFT" windowIndex="1" name="1" comment="LEFT" />
+  </ChannelConfig>
+
+  <ScreenConfig>
+    <Screen height="1125" h="0.0" width="1500" p="0.0" originX="-1000" comment="S_A" originY="1500"  r="0.0" name="0" originZ="0" />
+    <Screen height="1125" h="0.0" width="1500" p="0.0" originX="1000" comment="S_A" originY="1500"  r="0.0" name="1" originZ="0" />
+  </ScreenConfig>
+</LOCAL>
+
+<!-- <INCLUDE>cnea-screens.xml</INCLUDE> -->
