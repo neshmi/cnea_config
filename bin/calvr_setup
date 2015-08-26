@@ -2,7 +2,7 @@
 
 echo "Downloading and setting up CalVR"
 echo "Setting up CalVR"
-mkdir /home/calvr/src
+mkdir -p /home/calvr/src
 cd /home/calvr/src
 git clone git://github.com/calvr/calvr.git
 git clone git://github.com/calvr/calvr_plugins.git

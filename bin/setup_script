@@ -4,10 +4,10 @@ sudo su -c "bin/setup_hosts"
 
 # Setup Directories
 echo "Setting up Directories"
-mkdir /home/calvr/CalVR
-mkdir /home/calvr/CalVR/config
-mkdir /home/calvr/calvr_data
-mkdir /home/calvr/bin
+mkdir -p /home/calvr/CalVR
+mkdir -p /home/calvr/CalVR/config
+mkdir -p /home/calvr/calvr_data
+mkdir -p /home/calvr/bin
 
 # Copy files into place
 echo "Copying files into place"
