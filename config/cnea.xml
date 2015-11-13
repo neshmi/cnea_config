@@ -20,13 +20,13 @@
 
       <ConfigDebug value="true" />
       <MultiPC>
-      <NumSlaves value="2" />
-      <MasterInterface value="headnode" />
-        <Startup value="ssh ${USER}@CNEA-0 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="0" />
-        <Startup value="ssh ${USER}@CNEA-1 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="1" />
-        <Startup value="ssh ${USER}@CNEA-2 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="2" />
-        <Startup value="ssh ${USER}@CNEA-3 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="3" />
-        <Startup value="ssh ${USER}@CNEA-4 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="4" />
+      <NumSlaves value="5" />
+      <MasterInterface value="192.168.10.1" />
+        <Startup value="ssh ${USER}@cnea-0 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="0" />
+        <Startup value="ssh ${USER}@cnea-1 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="1" />
+        <Startup value="ssh ${USER}@cnea-2 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="2" />
+        <Startup value="ssh ${USER}@cnea-3 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="3" />
+        <Startup value="ssh ${USER}@cnea-4 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="4" />
       </MultiPC>
     <Input>
      <Threaded FPS="60.0" />
@@ -36,7 +36,7 @@
 
        <NumBodies value="1" />
        <NumButtons value="3" />
-       <NumValuators value="1" />
+       <NumValuators value="0" />
 
        <Body0>
          <Offset x="0" y="0" z="0" />
@@ -65,8 +65,8 @@
 
    <MenuSystem type="BOARDMENU" useHints="false">
      <BoardMenu>
-       <Position distance="1500" />
-       <Scale value="0.6" />
+       <Position distance="2500" />
+       <Scale value="1.6" />
        <Buttons select="0" open="1" />
        <Trigger value="DOUBLECLICK" />
       </BoardMenu>
@@ -74,13 +74,11 @@
 
     <SceneSize value="2000" />
     <ViewerPosition x="0" y="0" z="0" />
-    <Freeze value="off" />
+   <Freeze value="off" />
     <EyeSeparation value="on" />
-  <LOCAL host="headnode">
+
+<LOCAL host="headnode">
   <NumPipes value="1" />
-  <PipeConfig>
-   <Pipe server="0" screen="0" name="0" />
-  </PipeConfig>
   <NumScreens value="1" />
   <NumWindows value="1" />
 
