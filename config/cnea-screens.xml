@@ -3,138 +3,96 @@
 Height: 627mm
 Width:  1063mm
 -->
-<LOCAL host="CNEA-0" >
-  <Stereo separation="64.0" />
-
-  <NumPipes value="2" />
+<LOCAL host="CNEA-0,CNEA-1,CNEA-2">
+  <NumPipes value="1" />
   <NumScreens value="2" />
-  <NumWindows value="2" />
+  <NumWindows value="1" />
 
   <PipeConfig>
-    <Pipe server="0" screen="0" name="0" />
-    <Pipe server="0" screen="1" name="1" />
+    <Pipe display="not needed any more" server="0" screen="0" name="0" />
+    <Pipe display="not needed any more" server="0" screen="1" name="1" />
   </PipeConfig>
 
-  <WindowConfig>
-    <Window width="1920" comment="MAIN" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" />
-    <Window width="1920" comment="MAIN" pipeIndex="1" height="1080" left="0" bottom="0" name="1" decoration="false" />
-  </WindowConfig>
-
   <ChannelConfig>
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="HORIZONTAL_SPLIT" windowIndex="0" name="0" comment="LEFT" />
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="HORIZONTAL_SPLIT" windowIndex="1" name="1" comment="RIGHT" />
+    <Channel width="1920" height="1080" left="0" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="0"  />
+    <Channel width="1920" height="1080" left="1920" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="1"  />
   </ChannelConfig>
 
+  <WindowConfig>
+    <Window width="3840" window="0" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" overrideRedirect="true" />
+    <Window width="1920" window="0" pipeIndex="1" height="1080" left="0" bottom="0" name="1" decoration="false" />
+  </WindowConfig>
+
   <ScreenConfig>
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="-1063" originZ="627" originY="1500" comment="S_A" name="0"  />
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="627" originY="1500" comment="S_A" name="1"  />
+    <Screen width="1063" comment="FRONT" h="0.0" originX="-1063" originY="0" originZ="1500" height="627" p="0.0" r="180.0" name="0" screen="0" />
+    <Screen width="1063" comment="FRONT" h="0.0" originX="0" originY="0" originZ="1500" height="627" p="0.0" r="180.0" name="1" screen="1" />
+  </ScreenConfig>
+</LOCAL>
+
+<LOCAL host="CNEA-0" >
+  <ScreenConfig>
+    <Screen height="627" width="1063" r="180.0" h="0.0" p="0.0" originX="-1063" originZ="627" originY="1500" comment="CNEA-0-0" name="0"  />
+    <Screen height="627" width="1063" r="180.0" h="0.0" p="0.0" originX="0" originZ="627" originY="1500" comment="CNEA-0-1" name="1"  />
   </ScreenConfig>
 </LOCAL>
 
 <LOCAL host="CNEA-1" >
-  <Stereo separation="64.0" />
-
-  <NumPipes value="2" />
-  <NumScreens value="2" />
-  <NumWindows value="2" />
-
-  <PipeConfig>
-    <Pipe server="0" screen="0" name="0" />
-    <Pipe server="0" screen="1" name="1" />
-  </PipeConfig>
-
-  <WindowConfig>
-    <Window width="1920" comment="MAIN" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" />
-    <Window width="1920" comment="MAIN" pipeIndex="1" height="1080" left="0" bottom="0" name="1" decoration="false" />
-  </WindowConfig>
-
-  <ChannelConfig>
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="HORIZONTAL_SPLIT" windowIndex="0" name="0" comment="LEFT" />
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="HORIZONTAL_SPLIT" windowIndex="1" name="1" comment="RIGHT" />
-  </ChannelConfig>
-
   <ScreenConfig>
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="-1063" originZ="0" originY="1500" comment="S_A" name="0"  />
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="1500" comment="S_A" name="1"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="-1063" originZ="0" originY="1500" comment="CNEA-1-0" name="0"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="1500" comment="CNEA-1-1" name="1"  />
   </ScreenConfig>
 </LOCAL>
 
 <LOCAL host="CNEA-2" >
-  <Stereo separation="64.0" />
-
-  <NumPipes value="2" />
-  <NumScreens value="2" />
-  <NumWindows value="2" />
-
-  <PipeConfig>
-    <Pipe server="0" screen="0" name="0" />
-    <Pipe server="0" screen="1" name="1" />
-  </PipeConfig>
-
-  <WindowConfig>
-    <Window width="1920" comment="MAIN" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" />
-    <Window width="1920" comment="MAIN" pipeIndex="1" height="1080" left="0" bottom="0" name="1" decoration="false" />
-  </WindowConfig>
-
-  <ChannelConfig>
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="HORIZONTAL_SPLIT" windowIndex="0" name="0" comment="LEFT" />
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="HORIZONTAL_SPLIT" windowIndex="1" name="1" comment="RIGHT" />
-  </ChannelConfig>
-
   <ScreenConfig>
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="1500" comment="S_A" name="0"  />
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="1500" comment="S_A" name="1"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="-1063" originZ="-627" originY="1500" comment="CNEA-2-0" name="0"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="-627" originY="1500" comment="CNEA-2-1" name="1"  />
   </ScreenConfig>
 </LOCAL>
 
-<LOCAL host="CNEA-3" >
-  <Stereo separation="64.0" />
-
-  <NumPipes value="2" />
+<LOCAL host="CNEA-3">
+  <NumPipes value="1" />
   <NumScreens value="2" />
-  <NumWindows value="2" />
+  <NumWindows value="1" />
 
   <PipeConfig>
-    <Pipe server="0" screen="0" name="0" />
-    <Pipe server="0" screen="1" name="1" />
+    <Pipe display="not needed any more" server="0" screen="0" name="0" />
+    <Pipe display="not needed any more" server="0" screen="1" name="1" />
   </PipeConfig>
 
-  <WindowConfig>
-    <Window width="1920" comment="MAIN" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" />
-    <Window width="1920" comment="MAIN" pipeIndex="1" height="1080" left="0" bottom="0" name="1" decoration="false" />
-  </WindowConfig>
-
   <ChannelConfig>
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="HORIZONTAL_SPLIT" windowIndex="0" name="0" comment="LEFT" />
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="HORIZONTAL_SPLIT" windowIndex="1" name="1" comment="RIGHT" />
+    <Channel width="1920" height="1080" left="0" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="0"  />
+    <Channel width="1920" height="1080" left="1920" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="1"  />
   </ChannelConfig>
 
+  <WindowConfig>
+    <Window width="1920" window="0" pipeIndex="0" height="2160" left="0" bottom="0" name="0" decoration="false" overrideRedirect="true" />
+  </WindowConfig>
+
   <ScreenConfig>
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="1500" comment="S_A" name="0"  />
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="1500" comment="S_A" name="1"  />
+    <Screen height="627" width="1063" r="180.0" h="0.0" p="0.0" originX="1063" originZ="627" originY="1500" comment="CNEA-3-0" name="0"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="1063" originZ="0" originY="1500" comment="CNEA-3-1" name="1"  />
   </ScreenConfig>
 </LOCAL>
 
-<LOCAL host="CNEA-4" >
-  <Stereo separation="64.0" />
-
+<LOCAL host="CNEA-4">
   <NumPipes value="1" />
   <NumScreens value="1" />
   <NumWindows value="1" />
 
   <PipeConfig>
-    <Pipe server="0" screen="0" name="0" />
+    <Pipe display="not needed any more" server="0" screen="0" name="0" />
   </PipeConfig>
 
-  <WindowConfig>
-    <Window width="1920" comment="MAIN" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" />
-  </WindowConfig>
-
   <ChannelConfig>
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="HORIZONTAL_SPLIT" windowIndex="0" name="0" comment="LEFT" />
+    <Channel width="1920" height="1080" left="0" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="0"  />
   </ChannelConfig>
 
+  <WindowConfig>
+    <Window width="1920" window="0" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" overrideRedirect="true" />
+  </WindowConfig>
+
   <ScreenConfig>
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="1500" comment="S_A" name="0"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="1063" originZ="-627" originY="1500" comment="S_A" name="0"  />
   </ScreenConfig>
 </LOCAL>

@@ -133,27 +133,27 @@
 
 <LOCAL host="cnea-0">
   <NumPipes value="1" />
-  <NumScreens value="1" />
+  <NumScreens value="2" />
   <NumWindows value="1" />
 
   <PipeConfig>
-    <Pipe server="0" screen="0" name="0" />
-    <Pipe server="0" screen="1" name="1" />
+    <Pipe display="not needed any more" server="0" screen="0" name="0" />
+    <Pipe display="not needed any more" server="0" screen="1" name="1" />
   </PipeConfig>
 
-  <WindowConfig>
-    <Window width="1680" comment="MAIN" pipeIndex="0" height="1050" left="0" bottom="0" name="0" decoration="false" />
-    <Window width="1920" comment="MAIN" pipeIndex="1" height="1080" left="0" bottom="0" name="1" decoration="false" />
-  </WindowConfig>
-
   <ChannelConfig>
-    <Channel left="0" width="1680" bottom="0" height="1050" stereoMode="LEFT" windowIndex="0" name="0" comment="LEFT" />
-    <Channel left="0" width="1920" bottom="0" height="1080" stereoMode="LEFT" windowIndex="1" name="1" comment="LEFT" />
+    <Channel width="1920" height="1080" left="0" bottom="0" comment="MAIN" channel="0" stereoMode="MONO"  windowIndex="0"  name="0"  />
+    <Channel width="1920" height="1080" left="1920" bottom="0" comment="MAIN" channel="0" stereoMode="MONO"  windowIndex="0"  name="1"  />
   </ChannelConfig>
 
+  <WindowConfig>
+    <Window width="3840" window="0" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" overrideRedirect="true" />
+    <Window width="1920" window="0" pipeIndex="1" height="1080" left="0" bottom="0" name="1" decoration="false" />
+  </WindowConfig>
+
   <ScreenConfig>
-    <Screen height="1125" h="0.0" width="1500" p="0.0" originX="-1000" comment="S_A" originY="1500"  r="0.0" name="0" originZ="0" />
-    <Screen height="1125" h="0.0" width="1500" p="0.0" originX="1000" comment="S_A" originY="1500"  r="0.0" name="1" originZ="0" />
+    <Screen width="1063" comment="FRONT" h="0.0" originX="--1063" originY="0" originZ="1500" height="627" p="0.0" r="180.0" name="0" screen="0" />
+    <Screen width="1063" comment="FRONT" h="0.0" originX="0" originY="0" originZ="1500" height="627" p="0.0" r="180.0" name="1" screen="1" />
   </ScreenConfig>
 </LOCAL>
 
