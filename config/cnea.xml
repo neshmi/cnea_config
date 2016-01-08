@@ -74,7 +74,6 @@
     <ViewerPosition x="0" y="-1500" z="0" />
    <Freeze value="off" />
     <EyeSeparation value="on" />
-
 <LOCAL host="CNEA-4">
   <NumPipes value="1" />
   <NumScreens value="1" />
@@ -92,7 +91,7 @@
     <Screen height="627" h="0.0" width="1063" p="0.0"   originX="0"  comment="S_A" originY="0"  r="0.0" name="0" originZ="0" />
   </ScreenConfig>
 </LOCAL>
-<INCLUDE>cnea-screens-tmp.xml</INCLUDE>
+<INCLUDE>cnea-screens.xml</INCLUDE>
 
 <!-- Plugins -->
 <INCLUDE>panslod.xml</INCLUDE>

@@ -20,13 +20,7 @@ Width:  1063mm
 
   <WindowConfig>
     <Window width="3840" window="0" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" overrideRedirect="true" />
-    <Window width="1920" window="0" pipeIndex="1" height="1080" left="0" bottom="0" name="1" decoration="false" />
   </WindowConfig>
-
-  <ScreenConfig>
-    <Screen width="1063" comment="FRONT" h="0.0" originX="-1063" originY="0" originZ="1500" height="627" p="0.0" r="180.0" name="0" screen="0" />
-    <Screen width="1063" comment="FRONT" h="0.0" originX="0" originY="0" originZ="1500" height="627" p="0.0" r="180.0" name="1" screen="1" />
-  </ScreenConfig>
 </LOCAL>
 
 <LOCAL host="CNEA-0" >
@@ -50,7 +44,7 @@ Width:  1063mm
   </ScreenConfig>
 </LOCAL>
 
-<LOCAL host="CNEA-3">
+<LOCAL host="CNEA-3" >
   <NumPipes value="1" />
   <NumScreens value="2" />
   <NumWindows value="1" />
@@ -75,7 +69,7 @@ Width:  1063mm
   </ScreenConfig>
 </LOCAL>
 
-<LOCAL host="CNEA-4">
+<LOCAL host="CNEA-4" >
   <NumPipes value="1" />
   <NumScreens value="1" />
   <NumWindows value="1" />
@@ -93,6 +87,6 @@ Width:  1063mm
   </WindowConfig>
 
   <ScreenConfig>
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="1063" originZ="-627" originY="1500" comment="S_A" name="0"  />
+    <Screen width="1063" comment="CNEA-4-0" h="0.0" originX="1063" originY="2000" originZ="-627" height="627" p="0.0" r="0.0" name="0" screen="0" />
   </ScreenConfig>
 </LOCAL>
