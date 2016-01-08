@@ -2,10 +2,10 @@
 <Plugin>
 	<PanoViewLOD value="on"/>
 	<PanoViewLOD>
-		<ShaderDir value="/Users/neshmi/calvr_data/PansLOD/glsl/"/>
+		<ShaderDir value="/home/calvr/calvr_data/Pans/glsl/"/>
 		<FloorOffset value="1759.425"/>
-		<ImageSearchPath value="/Users/neshmi/calvr_data/PansLOD:/Volumes/MPPTransfer/calvr_data/PansLOD"/>
-		<DefaultConfigDir value="/Users/neshmi/calvr_data/PansLOD/config:/Volumes/MPPTransfer/calvr_data/PansLOD/config"/>
+		<ImageSearchPath value="/home/calvr/calvr_data/Pans"/>
+		<DefaultConfigDir value="/home/calvr/calvr_data/Pans/config"/>
 		<Pans>
 			<Jordan>
 				<Umayri_Best_Set/>
