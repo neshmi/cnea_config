@@ -1,13 +1,27 @@
-<!-- <?xml version="1.0"?>
+<?xml version="1.0"?>
 <Plugin>
 	<Points value="on">
-		<ConfigDir value="/Users/neshmi/calvr_data/points/" />
+		<ConfigDir value="/home/calvr/calvr_data/points/" />
 		<PointScale value="1.0" />
-		<ShaderPath value="/Users/neshmi/calvr_data/points/shaders" />
-		<ColorTable value="/Users/neshmi/calvr_data/points/shaders/colortable.rgb" />
+		<ShaderPath value="/home/calvr/calvr_data/points/shaders" />
+		<ColorTable value="/home/calvr/calvr_data/points/shaders/colortable.rgb" />
 		<Files>
-			<Tikal path="/Users/neshmi/calvr_data/points/tikal_10million.xyb" />
+			<Tikal path="/home/calvr/calvr_data/points/tikal_10million.xyb" />
 		</Files>
 	</Points>
+  
+  <PointsOOC value="on">
+    <ConfigDir value="/home/calvr_data/points/" />
+    <Files>
+        <SanDiego value="/home/calvr_data/points/SanDiegoAll.osga" />
+        <Tunnel value="/home/calvr_data/points/tunnel.osga" />
+        <BalboaPark value="/home/calvr_data/points/momcore.osga" />
+        <Campus value="/home/calvr_data/points/Campus.osga" />
+        <Tikal value="/home/calvr_data/points/Tikal.osga" />
+        <Balad value="/home/calvr_data/points/balad.osga" />
+        <Trefethen value="/home/calvr_data/points/trefethen.osga" />
+    </Files>
+  </PointsOOC>
+
 </Plugin>
- -->
+
