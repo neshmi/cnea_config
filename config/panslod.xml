@@ -10,7 +10,7 @@
 			<Jordan>
 				<Umayri_Best_Set/>
 				<Umayri_Set/>
-				<Umayri_Demo/>
+				<ELRAP/>
 				<Umayri>
 					<Temple_Entry_1/>
 					<Temple_Shrine_Light/>
@@ -45,7 +45,31 @@
 					<Building_C/>
 					<Build_D/>
 				</Umayri>
+				<ELRAP>
+					<KF18_001/>
+					<KF18_002/>
+					<KF18_003/>
+					<KNA_001/>
+					<KNA_002/>
+				</ELRAP>
 			</Jordan>
+			<Egypt>
+				<LuxorSet />
+				<Luxor>
+					<LuxorKarnakObelisks />
+					<LuxorMedinetColumnsBlueCeiling />
+					<LuxorMedinetHabuCourt />
+					<LuxorMedinetHabuRoyalTreasure1 />
+					<LuxorMedinetHabuRoyalTreasure2 />
+					<LuxorMHoutback />
+					<LuxorMHwall />
+					<LuxorRamasseum />
+					<LuxorTempleChapel />
+					<LuxorTempleEntryNight />
+					<LuxorTempleNight2 />
+					<LuxorTempleOutsideColumn />
+				</Luxor>
+			</Egypt>
 		</Pans>
 	</PanoViewLOD>
 </Plugin>

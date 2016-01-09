@@ -25,22 +25,22 @@ Width:  1063mm
 
 <LOCAL host="CNEA-0" >
   <ScreenConfig>
-    <Screen height="627" width="1063" r="180.0" h="0.0" p="0.0" originX="-1063" originZ="627" originY="1500" comment="CNEA-0-0" name="0"  />
-    <Screen height="627" width="1063" r="180.0" h="0.0" p="0.0" originX="0" originZ="627" originY="1500" comment="CNEA-0-1" name="1"  />
+    <Screen height="627" width="1063" r="180.0" h="0.0" p="0.0" originX="-1063" originZ="627" originY="0" comment="CNEA-0-0" name="0"  />
+    <Screen height="627" width="1063" r="180.0" h="0.0" p="0.0" originX="0" originZ="627" originY="0" comment="CNEA-0-1" name="1"  />
   </ScreenConfig>
 </LOCAL>
 
 <LOCAL host="CNEA-1" >
   <ScreenConfig>
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="-1063" originZ="0" originY="1500" comment="CNEA-1-0" name="0"  />
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="1500" comment="CNEA-1-1" name="1"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="-1063" originZ="0" originY="0" comment="CNEA-1-0" name="0"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="0" comment="CNEA-1-1" name="1"  />
   </ScreenConfig>
 </LOCAL>
 
 <LOCAL host="CNEA-2" >
   <ScreenConfig>
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="-1063" originZ="-627" originY="1500" comment="CNEA-2-0" name="0"  />
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="-627" originY="1500" comment="CNEA-2-1" name="1"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="0" originZ="-627" originY="0" comment="CNEA-2-0" name="0"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="-1063" originZ="-627" originY="0" comment="CNEA-2-1" name="1"  />
   </ScreenConfig>
 </LOCAL>
 
@@ -56,7 +56,7 @@ Width:  1063mm
 
   <ChannelConfig>
     <Channel width="1920" height="1080" left="0" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="0"  />
-    <Channel width="1920" height="1080" left="1920" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="1"  />
+    <Channel width="1920" height="1080" left="0" bottom="1080" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT" windowIndex="0" name="1" />
   </ChannelConfig>
 
   <WindowConfig>
@@ -64,8 +64,8 @@ Width:  1063mm
   </WindowConfig>
 
   <ScreenConfig>
-    <Screen height="627" width="1063" r="180.0" h="0.0" p="0.0" originX="1063" originZ="627" originY="1500" comment="CNEA-3-0" name="0"  />
-    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="1063" originZ="0" originY="1500" comment="CNEA-3-1" name="1"  />
+    <Screen height="627" width="1063" r="0.0" h="0.0" p="0.0" originX="1063" originZ="0" originY="0" comment="CNEA-3-1" name="0"  />
+    <Screen height="627" width="1063" r="180.0" h="0.0" p="0.0" originX="1063" originZ="627" originY="0" comment="CNEA-3-0" name="1"  />
   </ScreenConfig>
 </LOCAL>
 
@@ -87,6 +87,6 @@ Width:  1063mm
   </WindowConfig>
 
   <ScreenConfig>
-    <Screen width="1063" comment="CNEA-4-0" h="0.0" originX="1063" originY="2000" originZ="-627" height="627" p="0.0" r="0.0" name="0" screen="0" />
+    <Screen width="1063" comment="CNEA-4-0" h="0.0" originX="1063" originY="0" originZ="-627" height="627" p="0.0" r="0.0" name="0" screen="0" />
   </ScreenConfig>
 </LOCAL>
