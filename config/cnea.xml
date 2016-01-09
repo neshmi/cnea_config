@@ -95,5 +95,6 @@
 
 <!-- Plugins -->
 <INCLUDE>panslod.xml</INCLUDE>
+<INCLUDE>points.xml</INCLUDE>
 <!-- <INCLUDE>artifactvis.xml</INCLUDE> -->
 <!-- <INCLUDE>model_loader.xml</INCLUDE> -->
