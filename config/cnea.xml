@@ -16,10 +16,10 @@
       <!--Near value="100" /-->
       <!--Far value="1000000000" /-->
 
-      <ConfigDebug value="true" />
+      <ConfigDebug value="false" />
       <MultiPC>
       <NumSlaves value="3" />
-      <MasterInterface value="192.168.10.6" />
+      <MasterInterface value="192.168.10.1" />
         <Startup value="ssh ${USER}@cnea-0 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="0" />
         <Startup value="ssh ${USER}@cnea-1 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="1" />
         <!-- <Startup value="ssh ${USER}@cnea-2 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="2" /> -->
@@ -74,17 +74,17 @@
     <ViewerPosition x="0" y="-1500" z="0" />
    <Freeze value="off" />
     <EyeSeparation value="on" />
-<LOCAL host="CNEA-4">
+<LOCAL host="headnode">
   <NumPipes value="1" />
   <NumScreens value="1" />
   <NumWindows value="1" />
 
   <WindowConfig>
-    <Window width="1920" comment="MAIN" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="true" cudaDevice="0" />
+    <Window width="1000" comment="MAIN" pipeIndex="0" height="800" left="0" bottom="0" name="0" decoration="true" cudaDevice="0" />
   </WindowConfig>
 
   <ChannelConfig>
-    <Channel left="0"    width="1920" bottom="0" height="1080" stereoMode="MONO"  windowIndex="0" name="0" comment="LEFT" />
+    <Channel left="0"    width="1000" bottom="0" height="800" stereoMode="MONO"  windowIndex="0" name="0" comment="LEFT" />
   </ChannelConfig>
 
   <ScreenConfig>
