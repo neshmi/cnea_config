@@ -64,8 +64,8 @@ Width:  1063mm
   </WindowConfig>
 
   <ScreenConfig>
-    <Screen height="627" width="1063" r="0.0" h="-22.5" p="0.0" originX="1063" originZ="0" originY="0" comment="CNEA-3-1" name="0"  />
-    <Screen height="627" width="1063" r="180.0" h="-22.5" p="0.0" originX="1063" originZ="627" originY="0" comment="CNEA-3-0" name="1"  />
+    <Screen height="627" width="1063" r="0.0" h="-22.5" p="0.0" originX="1088" originZ="0" originY="0" comment="CNEA-3-1" name="0"  />
+    <Screen height="627" width="1063" r="180.0" h="-22.5" p="0.0" originX="1088" originZ="652" originY="0" comment="CNEA-3-0" name="1"  />
   </ScreenConfig>
 </LOCAL>
 
