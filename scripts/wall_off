@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ ! -z "$1" ]
+then
+  lg_remote p $1
+else
+  lg_remote p all
+fi

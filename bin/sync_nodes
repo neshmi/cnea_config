@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
-hostsArray=( "CNEA-0" "CNEA-1" "CNEA-2" "CNEA-3" "CNEA-4" )
+nodesArray=( "CNEA-0" "CNEA-1" "CNEA-2" )
 
-for host in "${hostsArray[@]}"
+for node in "${nodesArray[@]}"
 do
-  rsync -avz -e ssh /home/calvr/CalVR/config calvr@$HOST:/home/calvr/CalVR/config
-  rsync -avz -e ssh /home/calvr/calvr_data calvr@$HOST:/home/calvr/calvr_data
+  rsync -avz -e ssh /home/calvr/CalVR/resources calvr@$node:/home/calvr/CalVR
+  rsync -avz -e ssh /home/calvr/CalVR/shaders calvr@$node:/home/calvr/CalVR
+  rsync -avz -e ssh /home/calvr/CalVR/icons calvr@$node:/home/calvr/CalVR
+  rsync -avz -e ssh /home/calvr/CalVR/config calvr@$node:/home/calvr/CalVR
+  rsync -avz -e ssh /home/calvr/bin calvr@$node:/home/calvr
+  rsync -avz -e ssh /home/calvr/calvr_data calvr@$node:/home/calvr/
 done

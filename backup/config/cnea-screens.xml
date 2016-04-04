@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- LG47LA7400 DimensionsHeight: 585mmWidth:  1040mm-->
+<!-- LG47LA7400 Dimensions Height: 585mm Width:  1040mm-->
 <LOCAL host="CNEA-0,CNEA-1,CNEA-2">
   <NumPipes value="1" />
   <NumScreens value="2" />
@@ -24,7 +24,7 @@
 </LOCAL>
 <LOCAL host="CNEA-1" >
   <ScreenConfig>
-    <Screen height="585" width="1040" r="0.0" h="0" p="0.0" originX="-1065" originZ="0" originY="0" comment="CNEA-1-0" name="0"  />
+    <Screen height="585" width="1040" r="0.0" h="0" p="0.0" originX="-1065" originZ="0" originY="0" comment="CNEA-1-0" name="0" />
     <Screen height="585" width="1040" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="0" comment="CNEA-1-1" name="1"  />
   </ScreenConfig>
 </LOCAL>

@@ -2,6 +2,19 @@
 echo "Setting up hosts"
 sudo su -c "/home/calvr/setup/bin/setup_hosts"
 
+# Installing packages
+echo "Setting up packages"
+sudo apt-get update 
+sudo apt-get install lsb-core openssh-server vim build-essential git libmxml-dev cmake-curses-gui libopenscenegraph-dev openscenegraph osgearth libosgearth-dev libglew-dev libsdl-dev libtiff4-dev mussh lsb
+echo "Done."
+
+# Installing Hamachi
+echo "Installing Hamachi"
+wget https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb
+sudo dpkg -i logmein-hamachi_2.1.0.139-1_amd64.deb
+sudo hamachi login
+sudo hamachi attach neshmi@gmail.com
+
 # Setup .bashrc
 echo "Setting up .bashrc"
 echo "" >> /home/calvr/.bashrc

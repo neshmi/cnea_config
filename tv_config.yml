@@ -1,0 +1,37 @@
+tvs:
+  -
+    name: cnea-0-0
+    ip: 192.168.10.10
+    pairing_key:
+  -
+    name: cnea-0-1
+    ip: 192.168.10.11
+    pairing_key:
+  -
+    name: cnea-1-0
+    ip: 192.168.10.12
+    pairing_key: 779905
+  -
+    name: cnea-1-1
+    ip: 192.168.10.13
+    pairing_key: 267285
+  -
+    name: cnea-2-0
+    ip: 192.168.10.14
+    pairing_key:
+  -
+    name: cnea-2-1
+    ip: 192.168.10.15
+    pairing_key:
+  -
+    name: cnea-3-0
+    ip: 192.168.10.16
+    pairing_key:
+  -
+    name: cnea-3-1
+    ip: 192.168.10.17
+    pairing_key:
+  -
+    name: cnea-4-0
+    ip: 192.168.10.18
+    pairing_key:

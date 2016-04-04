@@ -4,20 +4,11 @@
 <ShowAxis value="false" />
 <Background r="0.0" g="0.0" b="0.0" />
 <MultiThreaded value="CullDrawThreadPerContext" />
-<!-- <FloorHeight value="-1193" /> -->
+<FloorHeight value="-1193" />
 <Near value="100" />
 <Far value="10000000000" />
 <UseDepthPartition value="false" />
-<ConfigDebug value="true" />
-<MultiPC>
-  <NumSlaves value="5" />
-  <MasterInterface value="192.168.10.1" />
-  <Startup value="ssh ${USER}@cnea-0 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="0" />
-  <Startup value="ssh ${USER}@cnea-1 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="1" />
-  <Startup value="ssh ${USER}@cnea-2 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="2" />
-  <Startup value="ssh ${USER}@cnea-3 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="3" />
-  <Startup value="ssh ${USER}@cnea-4 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="4" />
-</MultiPC>
+<ConfigDebug value="false" />
 <Input>
   <Threaded FPS="60.0" />
   <TrackingSystem0 value="MOUSE">
@@ -60,8 +51,4 @@
 <Freeze value="off" />
 <EyeSeparation value="on" />
 <INCLUDE>cnea-screens.xml</INCLUDE>
-<!-- Plugins -->
 <INCLUDE>panslod.xml</INCLUDE>
-<!-- <INCLUDE>points.xml</INCLUDE> -->
-<!-- <INCLUDE>artifactvis.xml</INCLUDE> -->
-<!-- <INCLUDE>model_loader.xml</INCLUDE> -->

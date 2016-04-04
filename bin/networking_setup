@@ -7,7 +7,7 @@ read -s calvrPassword
 ssh-keygen -q -t rsa -f ~/.ssh/id_rsa -N ""
 
 thisHost=$(hostname)
-hostsArray=( "headnode" "CNEA-0" "CNEA-1" "CNEA-2" "CNEA-3" "CNEA-4" )
+hostsArray=( "headnode" "CNEA-0" "CNEA-1" "CNEA-2" )
 
 for host in "${hostsArray[@]}"
 do

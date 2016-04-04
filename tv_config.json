@@ -1,0 +1,49 @@
+{
+  "tvs": [
+    {
+      "ip": "192.168.10.10",
+      "name": "cnea-0-0",
+      "pairing_key": null
+    },
+    {
+      "ip": "192.168.10.11",
+      "name": "cnea-0-1",
+      "pairing_key": null
+    },
+    {
+      "ip": "192.168.10.12",
+      "name": "cnea-1-0",
+      "pairing_key": 779905
+    },
+    {
+      "ip": "192.168.10.13",
+      "name": "cnea-1-1",
+      "pairing_key": 267285
+    },
+    {
+      "ip": "192.168.10.14",
+      "name": "cnea-2-0",
+      "pairing_key": null
+    },
+    {
+      "ip": "192.168.10.15",
+      "name": "cnea-2-1",
+      "pairing_key": null
+    },
+    {
+      "ip": "192.168.10.16",
+      "name": "cnea-3-0",
+      "pairing_key": null
+    },
+    {
+      "ip": "192.168.10.17",
+      "name": "cnea-3-1",
+      "pairing_key": null
+    },
+    {
+      "ip": "192.168.10.18",
+      "name": "cnea-4-0",
+      "pairing_key": null
+    }
+  ]
+}
