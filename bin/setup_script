@@ -4,8 +4,7 @@ sudo su -c "/home/calvr/setup/bin/setup_hosts"
 
 # Installing packages
 echo "Setting up packages"
-sudo apt-get update 
-sudo apt-get install lsb-core openssh-server vim build-essential git libmxml-dev cmake-curses-gui libopenscenegraph-dev openscenegraph osgearth libosgearth-dev libglew-dev libsdl-dev libtiff4-dev mussh lsb
+sudo apt-get update -qq && apt-get install -y lsb-core openssh-server vim build-essential git libmxml-dev cmake-curses-gui libopenscenegraph-dev openscenegraph osgearth libosgearth-dev libglew-dev libsdl-dev libtiff4-dev mussh lsb
 echo "Done."
 
 # Installing Hamachi
