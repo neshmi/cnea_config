@@ -10,13 +10,11 @@
 <UseDepthPartition value="false" />
 <ConfigDebug value="true" />
 <MultiPC>
-  <NumSlaves value="5" />
+  <NumSlaves value="3" />
   <MasterInterface value="192.168.10.1" />
   <Startup value="ssh ${USER}@cnea-0 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="0" />
   <Startup value="ssh ${USER}@cnea-1 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="1" />
   <Startup value="ssh ${USER}@cnea-2 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="2" />
-  <Startup value="ssh ${USER}@cnea-3 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="3" />
-  <Startup value="ssh ${USER}@cnea-4 if \( test -d `pwd` \) then cd `pwd` \;CalVR \>\&amp; /tmp/errors.log\; fi" name="4" />
 </MultiPC>
 <Input>
   <Threaded FPS="60.0" />
