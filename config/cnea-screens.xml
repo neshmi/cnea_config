@@ -2,7 +2,7 @@
 <!-- LG47LA7400 DimensionsHeight: 585mmWidth:  1040mm-->
 <LOCAL host="CNEA-0,CNEA-1,CNEA-2">
   <NumPipes value="1" />
-  <NumScreens value="2" />
+  <NumScreens value="3" />
   <NumWindows value="1" />
   <PipeConfig>
     <Pipe display="not needed any more" server="0" screen="0" name="0" />
@@ -13,62 +13,28 @@
     <Channel width="1920" height="1080" left="1920" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="1"  />
   </ChannelConfig>
   <WindowConfig>
-    <Window width="3840" window="0" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" overrideRedirect="true" />
+    <Window width="5760" window="0" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" overrideRedirect="true" />
   </WindowConfig>
 </LOCAL>
 <LOCAL host="CNEA-0" >
   <ScreenConfig>
     <Screen height="585" width="1040" r="180.0" h="0" p="0.0" originX="-1065" originZ="610" originY="0" comment="CNEA-0-0" name="0"  />
     <Screen height="585" width="1040" r="180.0" h="0.0" p="0.0" originX="0" originZ="610" originY="0" comment="CNEA-0-1" name="1"  />
+    <Screen height="585" width="1040" r="180.0" h="0.0" p="0.0" originX="1065" originZ="610" originY="0" comment="CNEA-0-2" name="2"  />
   </ScreenConfig>
 </LOCAL>
 <LOCAL host="CNEA-1" >
   <ScreenConfig>
     <Screen height="585" width="1040" r="0.0" h="0" p="0.0" originX="-1065" originZ="0" originY="0" comment="CNEA-1-0" name="0"  />
     <Screen height="585" width="1040" r="0.0" h="0.0" p="0.0" originX="0" originZ="0" originY="0" comment="CNEA-1-1" name="1"  />
+    <Screen height="585" width="1040" r="0.0" h="0.0" p="0.0" originX="1065" originZ="0" originY="0" comment="CNEA-1-2" name="2"  />
   </ScreenConfig>
 </LOCAL>
 <LOCAL host="CNEA-2" >
   <ScreenConfig>
     <Screen height="585" width="1040" r="0.0" h="0" p="0.0" originX="-1065" originZ="-640" originY="0" comment="CNEA-2-0" name="0"  />
     <Screen height="585" width="1040" r="0.0" h="0.0" p="0.0" originX="0" originZ="-640" originY="0" comment="CNEA-2-1" name="1"  />
-  </ScreenConfig>
-</LOCAL>
-<LOCAL host="CNEA-3" >
-  <NumPipes value="1" />
-  <NumScreens value="2" />
-  <NumWindows value="1" />
-  <PipeConfig>
-    <Pipe display="not needed any more" server="0" screen="0" name="0" />
-    <Pipe display="not needed any more" server="0" screen="1" name="1" />
-  </PipeConfig>
-  <ChannelConfig>
-    <Channel width="1920" height="1080" left="0" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="0"  />
-    <Channel width="1920" height="1080" left="0" bottom="1080" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT" windowIndex="0" name="1" />
-  </ChannelConfig>
-  <WindowConfig>
-    <Window width="1920" window="0" pipeIndex="0" height="2160" left="0" bottom="0" name="0" decoration="false" overrideRedirect="true" />
-  </WindowConfig>
-  <ScreenConfig>
-    <Screen height="585" width="1040" r="0.0" h="0.0" p="0.0" originX="1065" originZ="0" originY="0" comment="CNEA-3-1" name="0"  />
-    <Screen height="585" width="1040" r="180.0" h="0.0" p="0.0" originX="1065" originZ="610" originY="0" comment="CNEA-3-0" name="1"  />
-  </ScreenConfig>
-</LOCAL>
-<LOCAL host="CNEA-4" >
-  <NumPipes value="1" />
-  <NumScreens value="1" />
-  <NumWindows value="1" />
-  <PipeConfig>
-    <Pipe display="not needed any more" server="0" screen="0" name="0" />
-  </PipeConfig>
-  <ChannelConfig>
-    <Channel width="1920" height="1080" left="0" bottom="0" comment="MAIN" channel="0" stereoMode="HORIZONTAL_SPLIT"  windowIndex="0"  name="0"  />
-  </ChannelConfig>
-  <WindowConfig>
-    <Window width="1920" window="0" pipeIndex="0" height="1080" left="0" bottom="0" name="0" decoration="false" overrideRedirect="true" />
-  </WindowConfig>
-  <ScreenConfig>
-    <Screen width="1040" comment="CNEA-4-0" h="-0" originX="1065" originY="0" originZ="-630" height="585" p="0.0" r="0.0" name="0" screen="0" />
+    <Screen height="585" width="1040" r="0.0" h="0.0" p="0.0" originX="1065" originZ="-640" originY="0" comment="CNEA-2-2" name="2"  />
   </ScreenConfig>
 </LOCAL>
 <LOCAL host="headnode">
